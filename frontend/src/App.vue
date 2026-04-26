@@ -360,43 +360,7 @@
 
 <script setup>
 import { ref, computed, onMounted, h } from 'vue'
-import {
-  darkTheme,
-  NConfigProvider,
-  NLoadingBarProvider,
-  NDialogProvider,
-  NNotificationProvider,
-  NMessageProvider,
-  NLayoutHeader,
-  NLayoutContent,
-  NSpace,
-  NButton,
-  NIcon,
-  NGrid,
-  NGridItem,
-  NCard,
-  NTabs,
-  NTabPane,
-  NForm,
-  NFormItem,
-  NInput,
-  NInputNumber,
-  NSelect,
-  NTag,
-  NList,
-  NListItem,
-  NThing,
-  NStatistic,
-  NEmpty,
-  NAlert,
-  NDivider,
-  NTimeline,
-  NTimelineItem,
-  NDataTable,
-  NLog,
-  useMessage,
-  useDialog
-} from 'naive-ui'
+import { darkTheme, useMessage, useDialog } from 'naive-ui'
 import {
   BookOutline,
   HomeOutline,
