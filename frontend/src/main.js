@@ -1,0 +1,80 @@
+import { createApp, h } from 'vue'
+import {
+  create,
+  NConfigProvider,
+  NLoadingBarProvider,
+  NDialogProvider,
+  NNotificationProvider,
+  NMessageProvider,
+  NLayout,
+  NLayoutHeader,
+  NLayoutContent,
+  NSpace,
+  NButton,
+  NIcon,
+  NGrid,
+  NGridItem,
+  NCard,
+  NTabs,
+  NTabPane,
+  NForm,
+  NFormItem,
+  NInput,
+  NInputNumber,
+  NSelect,
+  NTag,
+  NList,
+  NListItem,
+  NThing,
+  NStatistic,
+  NEmpty,
+  NAlert,
+  NDivider,
+  NTimeline,
+  NTimelineItem,
+  NDataTable,
+  NLog
+} from 'naive-ui'
+import App from './App.vue'
+
+const naive = create({
+  components: [
+    NConfigProvider,
+    NLoadingBarProvider,
+    NDialogProvider,
+    NNotificationProvider,
+    NMessageProvider,
+    NLayout,
+    NLayoutHeader,
+    NLayoutContent,
+    NSpace,
+    NButton,
+    NIcon,
+    NGrid,
+    NGridItem,
+    NCard,
+    NTabs,
+    NTabPane,
+    NForm,
+    NFormItem,
+    NInput,
+    NInputNumber,
+    NSelect,
+    NTag,
+    NList,
+    NListItem,
+    NThing,
+    NStatistic,
+    NEmpty,
+    NAlert,
+    NDivider,
+    NTimeline,
+    NTimelineItem,
+    NDataTable,
+    NLog
+  ]
+})
+
+const app = createApp(App)
+app.use(naive)
+app.mount('#app')
