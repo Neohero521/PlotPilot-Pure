@@ -359,7 +359,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, h } from 'vue'
 import {
   darkTheme,
   NConfigProvider,
