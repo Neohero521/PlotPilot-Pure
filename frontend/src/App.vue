@@ -442,14 +442,15 @@ const worldSetting = ref(JSON.parse(localStorage.getItem('plotpilot-world') || '
 const chapters = ref(JSON.parse(localStorage.getItem('plotpilot-chapters') || '[]'))
 const triples = ref(JSON.parse(localStorage.getItem('plotpilot-triples') || '[]'))
 const foreshadowings = ref(JSON.parse(localStorage.getItem('plotpilot-foreshadowings') || '[]'))
-const beats = ref(JSON.parse(localStorage.getItem('plotpilot-beats') || '[
-  {"name": "第一幕：设定", "description": "介绍主角和世界", "completed": false},
-  {"name": "催化剂", "description": "打破现状的事件", "completed": false},
-  {"name": "第二幕：对抗", "description": "主角面对挑战", "completed": false},
-  {"name": "中点", "description": "故事的转折点", "completed": false},
-  {"name": "第三幕：高潮", "description": "最终对决", "completed": false},
-  {"name": "结局", "description": "收尾和余韵", "completed": false}
-]'))
+const defaultBeats = [
+  { name: '第一幕：设定', description: '介绍主角和世界', completed: false },
+  { name: '催化剂', description: '打破现状的事件', completed: false },
+  { name: '第二幕：对抗', description: '主角面对挑战', completed: false },
+  { name: '中点', description: '故事的转折点', completed: false },
+  { name: '第三幕：高潮', description: '最终对决', completed: false },
+  { name: '结局', description: '收尾和余韵', completed: false }
+]
+const beats = ref(JSON.parse(localStorage.getItem('plotpilot-beats') || JSON.stringify(defaultBeats)))
 const settings = ref(JSON.parse(localStorage.getItem('plotpilot-settings') || '{}'))
 
 // 保存数据
